@@ -18,7 +18,7 @@ export default async function Home() {
             </li> */}
             <li>
                 <div className="bg-blue-100 p-4 rounded-lg">
-                    <Link href="/about" className="text-blue-500 hover:underline">About</Link>
+                    <Link href="/about" className="text-blue-500 hover:underline">Descripción</Link>
                 </div>
             </li>
             <hr className="my-4 border-t-2 border-gray-200" />

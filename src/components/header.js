@@ -18,7 +18,7 @@ async function Header() {
                 </Link>
             )}
             <Link href="/dashboard" className="text-lg font-bold text-white hover:text-gray-100">
-                Dashboard
+                Cuenta
             </Link>
         </div>
         <div className="flex items-center space-x-4">
