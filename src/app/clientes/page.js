@@ -24,7 +24,7 @@ export default async function Home() {
             )}
 
             {/* Muestra los enlaces solo si el usuario es un administrador */}
-            {session?.user?.role === 'USER' && (
+            {session?.user?.role === 'ADMIN' && (
                 <div>
                     <Link className='enlace' href="/clientes/new"> Nuevo cliente </Link>
                     {clientes.map((cliente) => (

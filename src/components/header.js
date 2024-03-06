@@ -13,8 +13,7 @@ async function Header() {
                 Inicio
             </Link>
             {session?.user?.role === 'ADMIN' && (
-                <Link href="/admin">
-                    <a className="text-lg font-bold text-white hover:text-gray-100">Panel de Administrador</a>
+                <Link href="/admin" className="text-lg font-bold text-white hover:text-gray-100">Panel de Administrador
                 </Link>
             )}
             <Link href="/dashboard" className="text-lg font-bold text-white hover:text-gray-100">

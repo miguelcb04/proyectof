@@ -27,10 +27,10 @@ export const config = {
     matcher: [
         "/dashboard(.*)",
         "/admin(.*)",
-        "/zoos(.*)",
-        "/animales",
-        "/animales/new",
-        "/animales/edit",
-        "/animales/delete",
+        "/clientes(.*)",
+        "/bicicletas",
+        "/bicicletas/new",
+        "/bicicletas/edit",
+        "/bicicletas/delete",
     ],
 };
