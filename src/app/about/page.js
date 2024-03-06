@@ -3,9 +3,9 @@
 function About() {
   return (
     <>
-      <h1>Página About</h1>
+      <h1>Bike Tech</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Bike Tech es una tienda especializada en bicicletas que ofrece una amplia gama de productos y servicios relacionados con la tecnología aplicada al mundo del ciclismo. Desde la venta de bicicletas de última generación hasta accesorios innovadores y servicios de mantenimiento avanzado, Bike Tech se destaca por su compromiso con la excelencia técnica y la satisfacción del cliente en el ámbito de la movilidad ciclista
       </p>
     </>
   )

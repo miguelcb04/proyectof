@@ -5,7 +5,7 @@ async function page() {
 
     return (
         <>
-<div className="flex justify-center items-center h-screen bg-gray-200">
+<div className="flex justify-center items-center h-screen" style={{backgroundImage: `url(/dasboard.jpg)`, backgroundSize: "cover", backgroundPosition: "center top -400px"}}>
   <div className="bg-white p-8 rounded-lg shadow-md text-center">
     <h1 className="text-3xl font-bold mb-4">🔑 Dashboard</h1>
     <p className="text-lg mb-2">{sesion?.user.name}</p>
