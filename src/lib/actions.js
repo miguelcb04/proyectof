@@ -203,12 +203,13 @@ export async function getClientes() {
   
   export async function newBicicleta(formData) {
     try {
+      const id = Number(formData.get('id'))
       const modelo = formData.get('modelo')
       const precio = Number(formData.get('precio'))
   
       console.log(precio);
       const bicicleta = await prisma.bicicleta.create({
-        data: { modelo, precio  },
+        data: { modelo, precio, id  },
       })
   
       console.log(bicicleta);
