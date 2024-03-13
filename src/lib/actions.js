@@ -203,13 +203,13 @@ export async function getClientes() {
   
   export async function newBicicleta(formData) {
     try {
-      const id = Number(formData.get('id'))
+      const clienteId = Number(formData.get('clienteId'))
       const modelo = formData.get('modelo')
       const precio = Number(formData.get('precio'))
   
       console.log(precio);
       const bicicleta = await prisma.bicicleta.create({
-        data: { modelo, precio, id  },
+        data: { modelo, precio, clienteId  },
       })
   
       console.log(bicicleta);
@@ -223,13 +223,14 @@ export async function getClientes() {
   
   export async function editBicicleta(formData) {
     const id = Number( formData.get('id') )
+    const clienteId = Number( formData.get('clienteId') )
     const modelo = formData.get('modelo')
     const precio = Number(formData.get('precio'))
   
     try {
       const bicicleta = await prisma.bicicleta.update({
         where: { id },
-        data: {  modelo, precio },
+        data: {  modelo, precio, clienteId },
       })
       console.log(bicicleta);
       revalidatePath('/bicicletas')
