@@ -1,7 +1,9 @@
 import Button from '@/components/Button'
- 
+import { Suspense } from 'react'
+
 function FormBicicleta({ action, title, bicicleta, disabled=false }) {
 
+  
     return (
 <div className="flex justify-center items-center">
   <div className="max-h-full bg-white rounded-lg shadow-md w-full sm:w-2/3">
@@ -18,12 +20,17 @@ function FormBicicleta({ action, title, bicicleta, disabled=false }) {
           placeholder='Precio'
           defaultValue={bicicleta?.precio} required
           className="w-full border rounded-lg px-3 py-2 mb-2"/>
-        <label htmlFor='clienteId' className="block mb-2">Cliente ID</label>
+
+        {/* <label htmlFor='clienteId' className="block mb-2">Cliente ID</label>
         <input type='number' id='clienteId' name='clienteId'
           placeholder='Cliente ID'
           defaultValue={bicicleta?.clienteId} 
-          className="w-full border rounded-lg px-3 py-2 mb-2"/>
+          className="w-full border rounded-lg px-3 py-2 mb-2"/> */}
       </fieldset>
+      <Suspense fallback={'Loading ...'}>
+                <ListaZoos bicicletaId={bicicleta?.id} disabled={disabled} />
+      </Suspense>
+      {children}
       <Button title={title} />
     </form>
   </div>
