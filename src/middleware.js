@@ -28,9 +28,9 @@ export const config = {
         "/dashboard(.*)",
         "/admin(.*)",
         "/clientes(.*)",
-        "/bicicletas",
-        "/bicicletas/new",
-        "/bicicletas/edit",
-        "/bicicletas/delete",
+        "/articulos",
+        "/articulos/new",
+        "/articulos/edit",
+        "/articulos/delete",
     ],
 };
